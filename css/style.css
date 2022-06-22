@@ -1,0 +1,577 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    cursor: url(../img/cursor.cur), auto;
+}
+
+header {
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
+
+}
+
+h1 {
+    font-size: 30px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+a:hover {
+    cursor: url(../img/button.cur), auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;   
+    
+}
+
+nav ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav li {
+    display: inline-block;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e4e4ec;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+} 
+.top-menu{
+    padding: 16px 0;
+    background-color: #1f1f56;
+}
+.main_buttons li {
+    margin-right:  30px;    
+}
+
+.main_buttons a {
+    color: #b1b1d2;
+    text-decoration: none;
+}
+
+.main_buttons a:hover{
+    color: #fd8300;
+}
+
+.social_buttons a {
+    display: block;
+    background: url(../img/sprayt.png) no-repeat;
+}
+
+.social_buttons li {
+    margin-left: 30px;
+}
+
+a.fb {
+    background-position: 0 0;
+    width: 10px;
+    height: 19px;
+}
+
+a.fb:hover {
+    background-position: 0 -22px;
+}
+
+a.tw:hover {
+    background-position: -12px -22px;
+}
+
+a.in:hover {
+    background-position: -32px -22px;
+}
+
+a.tw {
+    background-position: -12px 0;
+    width: 18px;
+    height: 15px;
+}
+
+a.in {
+    background-position: -32px 0;
+    width: 19px;
+    height: 19px;
+}
+
+header a {
+    position: relative;
+}
+
+a.telefon:before,
+a.konwertik:before,
+a.skype:before{
+    content: "";
+    background: url(../img/sprayt.png);
+    position: absolute;
+    left: -28px;
+}
+
+a.telefon:before {
+    width: 16px ;
+    height: 17px;
+    background-position: 0 -43px;
+}
+
+a.konwertik:before {
+    width: 17px;
+    height: 13px;
+    background-position: -19px -45px;
+}
+
+
+a.skype:before {
+    width: 18px;
+    height: 19px;
+    background-position: -39px -44px;
+}
+
+.ctrelka {
+    position: relative;
+    border-top: 1px solid #cdcddd;
+}
+
+.ctrelka:before {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid #666 ;
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    top: 20px;
+    right: 14px;
+    transition: all 20 ease;    
+}
+
+.ctrelka:hover:before {
+    transform: rotate(45deg);
+    border-color: #fff;
+    top: 20px;
+    right: 12px;
+}
+
+.hunter {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 0;
+    align-items: center;
+}
+
+
+.logo img {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.coln {
+    display: inline-block;
+    width: 219px;
+    box-sizing: border-box;
+    vertical-align: top;  
+}
+
+.figcoln {
+    display: inline-block;
+    width: 219px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.nomer,
+.email {
+    margin: 0;
+}
+
+.nomer li,
+.email li {
+    padding: 6px 0;
+}
+
+.nomer a {
+    color: #25252c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.email a {
+    color: #25252c;
+    text-decoration: none;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
+.stick {
+    position: relative;
+}
+
+.stick::before {
+    content:"";
+    position: absolute;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+    left: -10px;
+}
+
+.call {
+    text-align: right;
+}
+
+
+.order-a-call {
+    border: 2px solid #fd8300;
+    border-radius: 25px;
+    color: #25252c;
+    font: bold 14px "Arial";
+    padding: 16px 30px;  
+    text-decoration: none;
+    display: inline-block;    
+}
+
+.order-a-call:hover {
+    background-color:#fd8300;
+    color: #fff;
+}
+
+
+.offer-of-the-month {
+    padding: 60px 0 40px;
+    background-image: url(../img/offer-of-the-month.png);
+    background-size: cover;
+    margin-bottom: 42px;
+}
+
+
+.offer-of-the-month p {
+    text-align: center;
+}
+
+
+.the-main-thing {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Roboto Slab";
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.secondary {
+    font-size: 14px;
+    color: #fff;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.prices span {
+    font-size: 40px; 
+}
+
+.prices {
+    font-size: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    margin: 0;
+}
+
+.super-men {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-in-main {
+    max-width: 713px;
+}
+
+.text {
+    padding-bottom: 33px;
+}
+
+.text a {
+    color: #fd8300;
+}
+
+.text p {
+    color: #666666;
+    line-height: 1.7em;
+}
+
+.text a:hover {
+    text-decoration: none;
+}
+
+.projects {
+    margin: 33px 0 35px 0;
+}
+
+.projects h2 {
+    font-size: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.projects h3:hover {
+    text-decoration: underline;
+}
+
+.projects h3 {
+    color: #1f1f56;
+    margin: 10px 0;
+}
+
+.projects  p {
+    line-height: 18px;
+    text-decoration: none;
+     color: #b4b4be;
+     margin: 0;
+     font-size: 13px;
+}
+
+.houses {
+    display: flex;
+    justify-content: space-between;
+}
+
+.realy-aside a {
+    background-color: #e4e4ec;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 14px;
+}
+
+.realy-aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sides-menu {
+    position: sticky;
+    top: 20px;
+}
+
+.sides-menu p {
+    background-color: #1f1f56;
+    border-radius: 3px 3px 0 0;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    margin: 0;
+    padding: 17px 16px 13px;
+}
+
+
+
+
+.menu > li:hover > a {
+    background-color: #fd8300;
+    color: #ffffff;
+}
+
+.menu > li:hover .menu-in-menu {
+    display: block;
+}
+
+.menu > li > a {
+    color: #25252c;
+}
+
+.menu > li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+
+.menu-in-menu {
+    display: none;
+}
+
+.menu-in-menu > li > a {
+    color: #828286;
+    padding-left: 30px;
+}
+
+
+.menu-in-menu > li > a:hover {
+    background-color: #cecedd;
+}
+
+
+
+.bottom-footer {
+    background-color: #ededf5;
+    margin: 46px 0 0;
+    padding: 42px 78px 55px 77px;
+}
+
+.bottom-footer a {
+    position: relative;
+}
+
+.bottom-footer ul {
+    margin: 0;
+}
+
+
+.wrapper ul {
+    list-style: none;
+}
+
+.more {
+    padding: 0;
+}
+
+.more a {
+    color: #707070;
+    text-decoration: none;
+    line-height: 26px;
+}
+
+.more a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.copyright{
+    background-color: #dcdce6;
+    padding: 18px 0 ;
+}
+
+.copyright p {
+    margin: 0;
+    color: #a2a2af;
+    text-align: center;
+}
+
+.uls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.uls h2 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.uls p {
+    margin: 14px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.p-mail {
+    text-decoration: underline;
+}
+
+.bold a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #25252c;
+}
+
+.consylt {
+    padding-right: 5%;
+}
+
+.recvisites {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    padding-right: 5%;
+}
+
+.recv {
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+}
+
+.recvisites p {
+}
+
+.forma {
+    font-family: "Roboto Slab";
+}
+
+.ahka {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.infprice {
+    font-size: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.infop {
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.thb {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px ;
+    overflow: hidden;
+}
+
+.thb thead>tr {
+    background-color: #1f1f56;
+}
+
+.thb th {
+    padding: 13px 20px;
+    color: #fff;
+    font-family: "Roboto Slab";
+    text-align: left;
+}
+
+.thb tbody {
+    background-color: #e4e4ec;
+}
+
+.thb td {
+    padding: 13px 20px;
+    text-align: left;
+    color: #666;
+    border-top: 1px solid #cdcddd;
+}
+
+
+.thb tbody tr:hover td {
+    background-color: #fd8300;
+    color: #fff;
+}
