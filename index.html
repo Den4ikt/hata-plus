@@ -16,6 +16,7 @@
         <div class="top-menu">
             <div class="wrapper">
                 <nav class="clear">
+                    <div class="burgger"></div>
                     <ul class="main_buttons">
                         <li><a href="index.html">Головна</a></li>
                         <li><a href="#">Про компанію</a></li>
@@ -118,8 +119,7 @@
                     <li class="ctrelka"><a href="#">Генеральний план</a></li>
                     <li class="ctrelka">
                         <a href="#">Навколишнє середовище</a>
-                        <ul class="menu-in-me
-                        +++++++++++++nu">
+                        <ul class="menu-in-menu">
                             <li><a href="#">Продані</a></li>
                             <li><a href="#">Заброньованні</a></li>
                             <li><a href="#">В процесі будівництва</a></li>
@@ -164,6 +164,15 @@
             <p>© Будівельна компанія “Хата Плюс” 2018.</p>
         </div>
     </div>
+    <script>
+        const burgger = document.querySelector(".burgger")
+        const menu = document.querySelector(".main_buttons")
+
+        burgger.onclick = () => {
+            menu.classList.toggle("menu_open")
+            burgger.classList.toggle("burgger_cross")
+        }
+    </script>
 </body>
 
 </html>
