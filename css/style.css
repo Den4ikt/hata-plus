@@ -43,16 +43,45 @@ nav li {
 }
 
 .burgger {
+    position: relative;
+    display: inline-block;
     width: 20px;
     height: 20px;
     background-color: #ffffff;
     border-radius: 3px;
-    background-image: url("../img/menu.png");
+    /*background-image: url("../img/menu.png");*/
     background-size: cover;
 }
 
+.burgger::before,
+.burgger::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    right: 1px;
+    top: 6px;
+    transform: rotate(0deg);
+    background-color: #1f1f56;
+    transition: all 0.5s ease;
+}
+
+.burgger::after {
+    top: 11px;
+}
+
+.burgger_cross::before {
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+.burgger_cross::after{
+    transform: rotate(-45deg);
+    top: 10px;    
+}
+
 .burgger_cross {
-    background-image: url("../img/close.png");
+    /*background-image: url("../img/close.png");*/
 }
 
 hr {
@@ -725,6 +754,16 @@ textarea {
 @media screen and (min-width:670px) {
     .main_buttons {
         display: block;
+        position: static;
+    }
+
+    .menu_open {
+        width: max-content;
+    }
+
+    .menu_open a {
+        display: inline;
+        padding: 0;
     }
     
     .burgger {
