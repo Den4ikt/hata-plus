@@ -555,6 +555,7 @@ a.skype:before {
 .uls {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .uls h2 {
@@ -668,15 +669,20 @@ a.skype:before {
     overflow-x: scroll;
 }
 
-.map {}
+.map {
+    overflow: hidden;
+    height: 420px;
+}
 
 .map iframe {
+    margin-top: -60px;
     border: none;
 }
 
 .father {
     display: flex;
     column-gap: 27rem;
+    flex-direction: column;
 }
 
 .input {
@@ -711,11 +717,6 @@ textarea {
 
 .one {
     width: 100%;
-}
-
-textarea {
-    width: 413rem;
-    height: 106rem;
 }
 
 .submit {
@@ -773,6 +774,19 @@ textarea {
     
     .burgger {
         display: none;
+    }
+
+    .uls {
+        flex-direction: row;
+    }
+
+    .father {
+        flex-direction: row;
+    }
+
+    textarea {
+        width: 413rem;
+        height: 106rem;
     }
 }
 
