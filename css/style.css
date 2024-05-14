@@ -654,6 +654,7 @@ a.skype:before {
     padding: 13rem 20rem;
     text-align: left;
     color: #666;
+    white-space: nowrap;
     border-top: 1rem solid #cdcddd;
 }
 
@@ -661,6 +662,10 @@ a.skype:before {
 .thb tbody tr:hover td {
     background-color: #fd8300;
     color: #fff;
+}
+
+.table-scrol {
+    overflow-x: scroll;
 }
 
 .map {}
