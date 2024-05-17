@@ -604,6 +604,7 @@ a.skype:before {
 
 .forma {
     font-family: "Roboto Slab";
+    margin-top: 27px;
 }
 
 .ahka {
@@ -733,6 +734,7 @@ textarea {
     display: flex;
     justify-content: space-around;
     font-size: 13rem;
+    flex-direction: column-reverse;
 }
 
 .send {
@@ -763,6 +765,14 @@ textarea {
     }
 
     .houses {
+        flex-direction: row;
+    }
+
+    .input2 {
+        flex-direction: row;
+    }
+
+    .submit {
         flex-direction: row;
     }
 }
@@ -819,4 +829,8 @@ textarea {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    form {
+        padding: 0;
+    } 
 }
