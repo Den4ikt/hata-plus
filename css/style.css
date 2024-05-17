@@ -671,7 +671,9 @@ a.skype:before {
 
 .map {
     overflow: hidden;
-    height: 420px;
+    height: 300px;
+    /*width: 300px;*/
+    margin-top: 35px;
 }
 
 .map iframe {
@@ -685,8 +687,15 @@ a.skype:before {
     flex-direction: column;
 }
 
+form {
+    /*padding: 5px;*/
+    box-sizing: border-box;
+}
+
 .input {
+    display: flex;
     justify-content: space-around;
+    flex-direction: column;
 }
 
 .input h2 {
@@ -709,6 +718,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     column-gap: 10rem;
+    flex-direction: column;
 }
 
 .two {
