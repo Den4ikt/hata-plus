@@ -96,6 +96,8 @@ sup {
 .wrapper {
     margin: 0 auto;
     max-width: 960rem;
+    padding: 3px;
+    box-sizing: border-box;
 }
 
 .top-menu {
@@ -308,6 +310,7 @@ a.skype:before {
     height: 51rem;
     background-color: #e4e4ec;
     left: -10rem;
+    display: none;
 }
 
 .call {
@@ -581,6 +584,7 @@ a.skype:before {
     font-size: 18rem;
     text-decoration: none;
     color: #25252c;
+    white-space: nowrap;
 }
 
 .consylt {
@@ -678,7 +682,7 @@ a.skype:before {
 }
 
 .map iframe {
-    margin-top: -60px;
+    margin-top: -65px;
     border: none;
 }
 
@@ -747,6 +751,7 @@ textarea {
     display: inline-block;
     padding: 13rem 30rem 10rem;
     box-sizing: border-box;
+    max-width: 50%;
 }
 
 .send:hover {
@@ -772,9 +777,6 @@ textarea {
         flex-direction: row;
     }
 
-    .submit {
-        flex-direction: row;
-    }
 }
 
 @media screen and (min-width:670px) {
@@ -782,11 +784,27 @@ textarea {
         display: block;
         position: static;
     }
-
+    
+    .input2 {
+        flex-direction: column;
+    }
+    
+    .map {
+        width: 50%;
+    }
+    
+    form {
+        width: 50%;
+    }
+    
+    textarea {
+        width: 100%;
+    }
+    
     .menu_open {
         width: max-content;
     }
-
+    
     .menu_open a {
         display: inline;
         padding: 0;
@@ -795,22 +813,37 @@ textarea {
     .burgger {
         display: none;
     }
-
+    
+    .stick::before {
+        display: block;
+    }
+    
     .uls {
         flex-direction: row;
     }
-
+    
     .father {
         flex-direction: row;
     }
-
+    
     textarea {
-        width: 413rem;
         height: 106rem;
     }
 }
 
+@media screen and (min-width:800px) {
+    .input2 {
+        flex-direction: row;
+    }
+    .submit {
+        flex-direction: row;
+    }
+}
+
 @media screen and (min-width:990px) {
+    .wrapper {
+        padding: 0;
+    }
     .hunter {
         justify-content: space-between;
     }
@@ -821,7 +854,7 @@ textarea {
         padding: 0;
         padding-bottom: 33px;
     }
-
+    
     .projects {
         padding: 0;
     }
@@ -829,8 +862,11 @@ textarea {
         padding-left: 10px;
         padding-right: 10px;
     }
-
+    
     form {
         padding: 0;
     } 
+    textarea {
+        width: 413rem;
+    }
 }
